@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sara's Blog</title>
+        <title>Hong Kong</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -10,7 +11,7 @@
     </head>
     <body>
         <header>
-            <h1><a href='/'>Sara's Blog</a></h1>
+            <h1><a href='/'>Hong Kong</a></h1>
             <nav>
                 <ul>
                     <li><a href='/'>Home</a></li>
@@ -20,71 +21,53 @@
         </header>
 
         <main>
+            
+            <nav id="nav" class="menu-closed">
+                <button id="burgerbutton">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </button>
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Home1</a></li>
+                    <li><a href='#'>Home2</a></li>
+                    <li><a href='#'>Home3</a></li>
+                </ul>
+            </nav>
+
+
             <section>
-                <h2>Latest Posts</h2>
+                <h2>My Home Town</h2>
                 <article>
-                    <h3>My blog</h3>
-                    <p>Today I want to start something new... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </article>
-                <article>
-                    <h3>Hello World!</h3>
-                    <p>So, this is it.</p>
+                    
+                    <p> This is my home town: Hong Kong</p>
+                    <img src='nightView.jpg' alt='A Portrait of Sara'>
+                    
                 </article>
             </section>
             <aside>
-                <img src='sara.jpg' alt='A Portrait of Sara'>
-                <h2>Welcome!</h2>
-                <p>My name is Sara, ... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </aside>
-            <a id="pete_click">click here</a>
-            <p id="pete_hidden" class="hiddenj"> hello this is hidden</p>
+                
+                <h2>&#9432; Info:</h2>
+                <p> Hong Kong is a bustling city-state with a population of over 7 million people. It is a leading financial center and hub for international trade and commerce. The city offers a unique blend of Eastern and Western cultures, a diverse food scene, and many world-class attractions, such as Victoria Harbour and the Peak Tram. Hong Kong is a popular destination for tourists and expats alike, with a cosmopolitan vibe and dynamic atmosphere.</p>
 
-            <p class='hiddenj'> hello this is hidden class</p>
-            <p class='hiddenj'> hello this is hidden class 2 </p>
+            </aside>
+
+            
         </main>
         <footer>
-            <p>&copy; S. Miller</p>
+            <p>&copy; P. Ng</p>
             <nav>
                 <ul>
                     <li><a href='imprint'>Imprint</a></li>
                 </ul>
             </nav>
         </footer>
+        <script src="main.js"></script>
     </body>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
 
-        const myElement = document.getElementById("pete_click");
-        //const hiddenElement = document.getElementById("pete_hidden");
-        const hiddenElement = document.querySelector('.hiddenj'); //same as the selector in css (no "All" then only get the first element)
-        console.log(myElement);
-        console.log(hiddenElement);
-        let x = 0;
-        myElement.addEventListener("click", function() {
-           console.log('clicked');
-           hiddenElement.classList.remove("hiddenj")
-           //hiddenElement.removeAttribute("id"); //delete the tag id then back to original
-            //myElement.setAttribute('id','hidden');
-            if (x%2 == 0){
-
-                //hiddenElement.removeAttribute("id"); //delete the tag id then back to original
-                myElement.setAttribute('id','hidden');
-                //document.getElementById("pete_hidden").style.display = 'block';
-                //document.getElementById("pete_hidden").style.visibility = 'visible';
-                x++;
-            }else{
-                //document.getElementById("pete_hidden").style.display = 'none';
-                //document.getElementById("pete_hidden").style.visibility = 'hidden';
-                x++;
-            }
-        });
-    });
-
-
-
-
-    /* event.preventDefault(); */
     </script>
 </html>
 
